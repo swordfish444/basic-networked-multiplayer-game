@@ -34,6 +34,7 @@ var express = require('express');
 // Create an Express app. Socket.io just sits on top of Express, but Express itself isn't
 // used much, unless you want to serve files with it, but that is not recommended.
 var app = express();
+app.use(express.static('client'))
 // Make a new HTTP server from Express. This doesn't get used itself either, unless you want to do stuff with it.
 var server = require('http').Server(app);
 // This is where Socket.io is set up. Socket takes in the HTTP server created above, and basically adds it's own

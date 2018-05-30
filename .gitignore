@@ -19,6 +19,8 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
+node_modules
+
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -118,3 +120,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows,webstorm,jetbrains
+node_modules/.*
